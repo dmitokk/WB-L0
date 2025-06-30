@@ -5,21 +5,23 @@ import (
 	"fmt"
 )
 
-func Consumer() {
+func ConsumerInit() (*kafka.Consumer, error){
 	consumer, err := kafka.NewConsumer(&kafka.ConfigMap{
     	"bootstrap.servers":    "localhost:9092",
     	"group.id":             "myGroup",
     	"auto.offset.reset":    "smallest"})
 
 	if err != nil {
-        panic(fmt.Sprintf("Failed to create consumer: %v", err))
+        return nil, fmt.Errorf("failed to create consumer: %w", err)
     }
    
     err = consumer.SubscribeTopics([]string{"orders_topic"}, nil)
 
     if err != nil {
-            panic(err)
+        return nil, fmt.Errorf("error subscribing to topic: %w", err)
     }
 
     fmt.Println("Consumer initialized")
+
+    return consumer, nil
 }
