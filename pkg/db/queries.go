@@ -133,7 +133,7 @@ func GetOrderById(db *sql.DB, orderUID string) (*model.Order, error) {
 
 	// Order
 	err := db.QueryRow(`
-		SELECT 
+		SELECT
 			OrderUid, TrackNumber, Entry, Locale, CustomerId,
 			DeliveryService, ShardKey, SmId, DataCreated, OofShard,
 			DeliveryId, PaymentId
@@ -211,4 +211,94 @@ func GetOrderById(db *sql.DB, orderUID string) (*model.Order, error) {
 	}
 
 	return &order, nil
+}
+
+func GetAllOrders(db *sql.DB) ([]*model.Order, error) {
+	query := `
+		SELECT 
+			o.orderuid, o.tracknumber, o.entry, o.locale, o.customerid,
+			o.deliveryservice, o.shardkey, o.smid, o.datacreated, o.oofshard,
+
+			d.deliveryid, d.firstname, d.phone, d.zip, d.city, d.address, d.region, d.email,
+
+			p.transactionname, p.requestid, p.currency, p.providername, p.amount, 
+			p.paymentdt, p.bank, p.deliverycost, p.goodstotal, p.customfee
+
+		FROM orders o
+		JOIN delivery d ON o.deliveryid = d.deliveryid
+		JOIN payment p ON o.paymentid = p.transactionname;
+		`
+	rows, err := db.Query(query)
+	if err != nil {
+		return nil, fmt.Errorf("query orders failed: %w", err)
+	}
+	defer rows.Close()
+
+	var orders []*model.Order
+
+	for rows.Next() {
+		var o model.Order
+		var d model.Delivery
+		var p model.Payment
+
+		err := rows.Scan(
+			&o.OrderUID, &o.TrackNumber, &o.Entry, &o.Locale, &o.CustomerID,
+			&o.DeliveryService, &o.ShardKey, &o.SmID, &o.DateCreated, &o.OofShard,
+
+			&d.DeliveryID, &d.FirstName, &d.Phone, &d.Zip, &d.City,
+			&d.Address, &d.Region, &d.Email,
+
+			&p.Transaction, &p.RequestID, &p.Currency, &p.Provider,
+			&p.Amount, &p.PaymentDt, &p.Bank, &p.DeliveryCost, &p.GoodsTotal, &p.CustomFee,
+		)
+		if err != nil {
+			return nil, fmt.Errorf("scan order row failed: %w", err)
+		}
+
+		items, err := getItemsForOrder(db, o.OrderUID)
+		if err != nil {
+			return nil, fmt.Errorf("fetching items for order %s failed: %w", o.OrderUID, err)
+		}
+
+		o.Delivery = &d
+		o.Payment = &p
+		o.Items = items
+
+		orders = append(orders, &o)
+	}
+
+	return orders, nil
+}
+
+
+func getItemsForOrder(db *sql.DB, orderUID string) ([]model.Item, error) {
+	query := `
+	SELECT 
+		i.chrtid, i.track_number, i.price, i.rid, i.itemname, i.sale,
+		i.itemsize, i.totalprice, i.nmid, i.brand, i.itemstatus
+	FROM items it
+	JOIN item i ON it.itemid = i.chrtid
+	WHERE it.orderid = $1;
+	`
+
+	rows, err := db.Query(query, orderUID)
+	if err != nil {
+		return nil, fmt.Errorf("query items failed: %w", err)
+	}
+	defer rows.Close()
+
+	var items []model.Item
+
+	for rows.Next() {
+		var it model.Item
+		if err := rows.Scan(
+			&it.ChrtID, &it.TrackNumber, &it.Price, &it.RID, &it.Name, &it.Sale,
+			&it.Size, &it.TotalPrice, &it.NmID, &it.Brand, &it.Status,
+		); err != nil {
+			return nil, fmt.Errorf("scan item row failed: %w", err)
+		}
+		items = append(items, it)
+	}
+
+	return items, nil
 }
