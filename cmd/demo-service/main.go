@@ -6,6 +6,7 @@ import (
 	"orders/pkg/db"
 	"orders/pkg/kafka"
 	"orders/pkg/worker"
+    "orders/pkg/http"
 )
 
 /*
@@ -46,5 +47,10 @@ func main() {
 
     // 5. Запуск worker процесса в фоне
     go worker.Start(kafka, database)
-    
+
+    // 6. Запуск http-сервера
+    err = http.Server(database)
+    if err != nil {
+        log.Fatal("Error running server:", err)
+    }
 }
