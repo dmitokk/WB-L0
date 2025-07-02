@@ -2,9 +2,10 @@ package main
 
 import (
 	"log"
+	"orders/pkg/cache"
 	"orders/pkg/db"
-    "orders/pkg/kafka"
-    "orders/pkg/cache"
+	"orders/pkg/kafka"
+	"orders/pkg/worker"
 )
 
 /*
@@ -37,11 +38,13 @@ func main() {
     // 3. Инициализация кэша
     cache.Init()
 
-    // 4. Восстановление заказов из БД в кэш
+    // 4. Восстановление заказов из БД в кэш при запуске
     err = cache.LoadFromDB(database)
     if err != nil {
         log.Fatal("Failed to create cache:", err)
     }
 
+    // 5. Запуск worker процесса в фоне
+    go worker.Start(kafka, database)
     
 }
