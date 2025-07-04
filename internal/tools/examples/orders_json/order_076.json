@@ -1,0 +1,61 @@
+{
+  "order_uid": "order-076",
+  "track_number": "TRACK-1444",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-76",
+  "delivery_service": "fedex",
+  "shardkey": "7",
+  "sm_id": 150,
+  "date_created": "2024-06-02T00:40:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "John",
+    "phone": "+79652181415",
+    "zip": "997004",
+    "city": "Piter",
+    "address": "Street 83",
+    "region": "Russia",
+    "email": "user76@example.com"
+  },
+  "payment": {
+    "transaction": "txn-76",
+    "request_id": "req-8855",
+    "currency": "USD",
+    "provider": "wbpay",
+    "amount": 3080,
+    "payment_dt": 1717247760,
+    "bank": "sberbank",
+    "delivery_cost": 136,
+    "goods_total": 8150,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 8546,
+      "track_number": "TRACK-1444",
+      "price": 1259,
+      "rid": "rid-bA6eHr",
+      "name": "Pants",
+      "sale": 11,
+      "size": "M",
+      "total_price": 1120,
+      "nm_id": 403870,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 8105,
+      "track_number": "TRACK-1444",
+      "price": 1032,
+      "rid": "rid-0eclUI",
+      "name": "Pants",
+      "sale": 16,
+      "size": "L",
+      "total_price": 866,
+      "nm_id": 366535,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

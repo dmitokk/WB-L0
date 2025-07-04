@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-043",
+  "track_number": "TRACK-3010",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-43",
+  "delivery_service": "dhl",
+  "shardkey": "1",
+  "sm_id": 114,
+  "date_created": "2024-06-01T19:10:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "Ivan",
+    "phone": "+79779610910",
+    "zip": "754924",
+    "city": "Moscow",
+    "address": "Street 35",
+    "region": "Russia",
+    "email": "user43@example.com"
+  },
+  "payment": {
+    "transaction": "txn-43",
+    "request_id": "req-8112",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 3303,
+    "payment_dt": 1717245780,
+    "bank": "sberbank",
+    "delivery_cost": 171,
+    "goods_total": 6561,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 5009,
+      "track_number": "TRACK-3010",
+      "price": 1538,
+      "rid": "rid-fTop8v",
+      "name": "Pants",
+      "sale": 21,
+      "size": "XL",
+      "total_price": 1215,
+      "nm_id": 266884,
+      "brand": "Reebok",
+      "status": 202
+    }
+  ]
+}

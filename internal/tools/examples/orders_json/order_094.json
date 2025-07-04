@@ -1,0 +1,61 @@
+{
+  "order_uid": "order-094",
+  "track_number": "TRACK-3767",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-94",
+  "delivery_service": "ups",
+  "shardkey": "9",
+  "sm_id": 185,
+  "date_created": "2024-06-02T03:40:00Z",
+  "oof_shard": "c",
+  "delivery": {
+    "name": "Ivan",
+    "phone": "+79325662866",
+    "zip": "506971",
+    "city": "Piter",
+    "address": "Street 40",
+    "region": "Russia",
+    "email": "user94@example.com"
+  },
+  "payment": {
+    "transaction": "txn-94",
+    "request_id": "req-7578",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 5398,
+    "payment_dt": 1717248840,
+    "bank": "vtb",
+    "delivery_cost": 154,
+    "goods_total": 2635,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 5434,
+      "track_number": "TRACK-3767",
+      "price": 1312,
+      "rid": "rid-1sd1Cz",
+      "name": "Pants",
+      "sale": 42,
+      "size": "XL",
+      "total_price": 760,
+      "nm_id": 384086,
+      "brand": "Reebok",
+      "status": 202
+    },
+    {
+      "chrt_id": 2371,
+      "track_number": "TRACK-3767",
+      "price": 1762,
+      "rid": "rid-BsHS09",
+      "name": "Shirt",
+      "sale": 21,
+      "size": "L",
+      "total_price": 1391,
+      "nm_id": 897450,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

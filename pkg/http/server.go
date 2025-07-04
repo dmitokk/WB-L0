@@ -8,6 +8,7 @@ import (
 
 func Server(database *sql.DB) error {
 	http.HandleFunc("/order/", handler(database))
+	fmt.Println("Server started!")
 
 	if err := http.ListenAndServe(":8081", nil); err != nil {
         return fmt.Errorf("error starting server: %w", err)

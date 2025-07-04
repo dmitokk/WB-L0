@@ -22,6 +22,7 @@ import (
 */
 
 func Start(consumer *kafka.Consumer, database *sql.DB) error {
+	fmt.Println("Main loop started in goroutine!")
 
 	for {
 		ev := consumer.Poll(100)

@@ -1,0 +1,74 @@
+{
+  "order_uid": "order-039",
+  "track_number": "TRACK-8079",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-39",
+  "delivery_service": "dhl",
+  "shardkey": "7",
+  "sm_id": 200,
+  "date_created": "2024-06-01T18:30:00Z",
+  "oof_shard": "c",
+  "delivery": {
+    "name": "Ivan",
+    "phone": "+79844125371",
+    "zip": "940335",
+    "city": "Kazan",
+    "address": "Street 81",
+    "region": "Russia",
+    "email": "user39@example.com"
+  },
+  "payment": {
+    "transaction": "txn-39",
+    "request_id": "req-2665",
+    "currency": "RUB",
+    "provider": "paypal",
+    "amount": 5739,
+    "payment_dt": 1717245540,
+    "bank": "sberbank",
+    "delivery_cost": 310,
+    "goods_total": 4326,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 6390,
+      "track_number": "TRACK-8079",
+      "price": 151,
+      "rid": "rid-YVAAaZ",
+      "name": "Shirt",
+      "sale": 12,
+      "size": "S",
+      "total_price": 132,
+      "nm_id": 434657,
+      "brand": "Reebok",
+      "status": 202
+    },
+    {
+      "chrt_id": 3500,
+      "track_number": "TRACK-8079",
+      "price": 1212,
+      "rid": "rid-qQl6Jv",
+      "name": "Shoes",
+      "sale": 27,
+      "size": "S",
+      "total_price": 884,
+      "nm_id": 172946,
+      "brand": "Reebok",
+      "status": 202
+    },
+    {
+      "chrt_id": 5572,
+      "track_number": "TRACK-8079",
+      "price": 355,
+      "rid": "rid-v4jut0",
+      "name": "Shirt",
+      "sale": 18,
+      "size": "S",
+      "total_price": 291,
+      "nm_id": 536600,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

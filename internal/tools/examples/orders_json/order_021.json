@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-021",
+  "track_number": "TRACK-6912",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-21",
+  "delivery_service": "fedex",
+  "shardkey": "5",
+  "sm_id": 104,
+  "date_created": "2024-06-01T15:30:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "Anna",
+    "phone": "+79136395665",
+    "zip": "686694",
+    "city": "Piter",
+    "address": "Street 25",
+    "region": "Russia",
+    "email": "user21@example.com"
+  },
+  "payment": {
+    "transaction": "txn-21",
+    "request_id": "req-2726",
+    "currency": "RUB",
+    "provider": "wbpay",
+    "amount": 5174,
+    "payment_dt": 1717244460,
+    "bank": "vtb",
+    "delivery_cost": 407,
+    "goods_total": 9161,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 9029,
+      "track_number": "TRACK-6912",
+      "price": 374,
+      "rid": "rid-QjITmm",
+      "name": "Shoes",
+      "sale": 27,
+      "size": "XL",
+      "total_price": 273,
+      "nm_id": 464767,
+      "brand": "Reebok",
+      "status": 202
+    }
+  ]
+}

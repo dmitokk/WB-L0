@@ -1,0 +1,74 @@
+{
+  "order_uid": "order-028",
+  "track_number": "TRACK-8789",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-28",
+  "delivery_service": "fedex",
+  "shardkey": "6",
+  "sm_id": 106,
+  "date_created": "2024-06-01T16:40:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "Elena",
+    "phone": "+79412226037",
+    "zip": "699493",
+    "city": "Piter",
+    "address": "Street 46",
+    "region": "Russia",
+    "email": "user28@example.com"
+  },
+  "payment": {
+    "transaction": "txn-28",
+    "request_id": "req-6274",
+    "currency": "RUB",
+    "provider": "paypal",
+    "amount": 4480,
+    "payment_dt": 1717244880,
+    "bank": "tinkoff",
+    "delivery_cost": 478,
+    "goods_total": 6238,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 6580,
+      "track_number": "TRACK-8789",
+      "price": 1122,
+      "rid": "rid-B49Yn1",
+      "name": "Pants",
+      "sale": 23,
+      "size": "L",
+      "total_price": 863,
+      "nm_id": 715446,
+      "brand": "Nike",
+      "status": 202
+    },
+    {
+      "chrt_id": 4494,
+      "track_number": "TRACK-8789",
+      "price": 828,
+      "rid": "rid-vJaENV",
+      "name": "Shoes",
+      "sale": 39,
+      "size": "M",
+      "total_price": 505,
+      "nm_id": 409928,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 3824,
+      "track_number": "TRACK-8789",
+      "price": 478,
+      "rid": "rid-t7Qv3W",
+      "name": "Pants",
+      "sale": 17,
+      "size": "M",
+      "total_price": 396,
+      "nm_id": 414021,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

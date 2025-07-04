@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-027",
+  "track_number": "TRACK-9431",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-27",
+  "delivery_service": "ups",
+  "shardkey": "10",
+  "sm_id": 156,
+  "date_created": "2024-06-01T16:30:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "Anna",
+    "phone": "+79112408698",
+    "zip": "740893",
+    "city": "Kazan",
+    "address": "Street 81",
+    "region": "Russia",
+    "email": "user27@example.com"
+  },
+  "payment": {
+    "transaction": "txn-27",
+    "request_id": "req-6599",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 3798,
+    "payment_dt": 1717244820,
+    "bank": "vtb",
+    "delivery_cost": 202,
+    "goods_total": 5832,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 2779,
+      "track_number": "TRACK-9431",
+      "price": 547,
+      "rid": "rid-TbzsLh",
+      "name": "Shoes",
+      "sale": 22,
+      "size": "L",
+      "total_price": 426,
+      "nm_id": 642572,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

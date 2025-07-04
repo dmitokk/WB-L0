@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-003",
+  "track_number": "TRACK-9334",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-3",
+  "delivery_service": "dhl",
+  "shardkey": "6",
+  "sm_id": 104,
+  "date_created": "2024-06-01T12:30:00Z",
+  "oof_shard": "c",
+  "delivery": {
+    "name": "John",
+    "phone": "+79393406116",
+    "zip": "960743",
+    "city": "Moscow",
+    "address": "Street 43",
+    "region": "Russia",
+    "email": "user3@example.com"
+  },
+  "payment": {
+    "transaction": "txn-3",
+    "request_id": "req-1455",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 7939,
+    "payment_dt": 1717243380,
+    "bank": "tinkoff",
+    "delivery_cost": 420,
+    "goods_total": 4047,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 4316,
+      "track_number": "TRACK-9334",
+      "price": 226,
+      "rid": "rid-kO6IM1",
+      "name": "Shirt",
+      "sale": 41,
+      "size": "L",
+      "total_price": 133,
+      "nm_id": 988299,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

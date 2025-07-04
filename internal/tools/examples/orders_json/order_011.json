@@ -1,0 +1,61 @@
+{
+  "order_uid": "order-011",
+  "track_number": "TRACK-4585",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-11",
+  "delivery_service": "dhl",
+  "shardkey": "3",
+  "sm_id": 200,
+  "date_created": "2024-06-01T13:50:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "Ivan",
+    "phone": "+79733333313",
+    "zip": "917518",
+    "city": "Piter",
+    "address": "Street 84",
+    "region": "Russia",
+    "email": "user11@example.com"
+  },
+  "payment": {
+    "transaction": "txn-11",
+    "request_id": "req-1116",
+    "currency": "USD",
+    "provider": "sber",
+    "amount": 6723,
+    "payment_dt": 1717243860,
+    "bank": "tinkoff",
+    "delivery_cost": 470,
+    "goods_total": 1344,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 1797,
+      "track_number": "TRACK-4585",
+      "price": 1319,
+      "rid": "rid-3RjMaX",
+      "name": "Shirt",
+      "sale": 25,
+      "size": "S",
+      "total_price": 989,
+      "nm_id": 518249,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 2904,
+      "track_number": "TRACK-4585",
+      "price": 1286,
+      "rid": "rid-n5TpeF",
+      "name": "Shirt",
+      "sale": 0,
+      "size": "S",
+      "total_price": 1286,
+      "nm_id": 761086,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

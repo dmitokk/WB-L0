@@ -1,0 +1,61 @@
+{
+  "order_uid": "order-015",
+  "track_number": "TRACK-7011",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-15",
+  "delivery_service": "dhl",
+  "shardkey": "7",
+  "sm_id": 150,
+  "date_created": "2024-06-01T14:30:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "John",
+    "phone": "+79856812655",
+    "zip": "429933",
+    "city": "Kazan",
+    "address": "Street 29",
+    "region": "Russia",
+    "email": "user15@example.com"
+  },
+  "payment": {
+    "transaction": "txn-15",
+    "request_id": "req-1827",
+    "currency": "RUB",
+    "provider": "paypal",
+    "amount": 1990,
+    "payment_dt": 1717244100,
+    "bank": "sberbank",
+    "delivery_cost": 390,
+    "goods_total": 8614,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 6227,
+      "track_number": "TRACK-7011",
+      "price": 834,
+      "rid": "rid-EKrCUt",
+      "name": "Shoes",
+      "sale": 50,
+      "size": "M",
+      "total_price": 417,
+      "nm_id": 727416,
+      "brand": "Reebok",
+      "status": 202
+    },
+    {
+      "chrt_id": 4615,
+      "track_number": "TRACK-7011",
+      "price": 1235,
+      "rid": "rid-9bitDT",
+      "name": "Pants",
+      "sale": 40,
+      "size": "XL",
+      "total_price": 741,
+      "nm_id": 422771,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

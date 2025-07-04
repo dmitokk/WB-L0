@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-077",
+  "track_number": "TRACK-3750",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-77",
+  "delivery_service": "ups",
+  "shardkey": "2",
+  "sm_id": 199,
+  "date_created": "2024-06-02T00:50:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "Anna",
+    "phone": "+79489361524",
+    "zip": "171092",
+    "city": "Moscow",
+    "address": "Street 79",
+    "region": "Russia",
+    "email": "user77@example.com"
+  },
+  "payment": {
+    "transaction": "txn-77",
+    "request_id": "req-4354",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 9953,
+    "payment_dt": 1717247820,
+    "bank": "sberbank",
+    "delivery_cost": 105,
+    "goods_total": 871,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 3664,
+      "track_number": "TRACK-3750",
+      "price": 1351,
+      "rid": "rid-zaThrX",
+      "name": "Pants",
+      "sale": 48,
+      "size": "XL",
+      "total_price": 702,
+      "nm_id": 363220,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

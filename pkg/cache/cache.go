@@ -19,6 +19,7 @@ func Init() {
 	c = Cache{
 		data: make(map[string]model.Order),
 	}
+	fmt.Println("Cache initialized!")
 }
 
 func Set(order model.Order) {
@@ -46,5 +47,6 @@ func LoadFromDB(database *sql.DB) error {
 		c.data[order.OrderUID] = *order
 	}
 
+	fmt.Println("Cache loaded from db!")
 	return nil
 }

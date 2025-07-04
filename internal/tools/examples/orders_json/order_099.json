@@ -1,0 +1,48 @@
+{
+  "order_uid": "order-099",
+  "track_number": "TRACK-5316",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-99",
+  "delivery_service": "ups",
+  "shardkey": "6",
+  "sm_id": 198,
+  "date_created": "2024-06-02T04:30:00Z",
+  "oof_shard": "c",
+  "delivery": {
+    "name": "Anna",
+    "phone": "+79531113155",
+    "zip": "721577",
+    "city": "Kazan",
+    "address": "Street 72",
+    "region": "Russia",
+    "email": "user99@example.com"
+  },
+  "payment": {
+    "transaction": "txn-99",
+    "request_id": "req-2670",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 3982,
+    "payment_dt": 1717249140,
+    "bank": "tinkoff",
+    "delivery_cost": 288,
+    "goods_total": 5126,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 8646,
+      "track_number": "TRACK-5316",
+      "price": 1896,
+      "rid": "rid-4L0X5M",
+      "name": "Shoes",
+      "sale": 45,
+      "size": "M",
+      "total_price": 1042,
+      "nm_id": 821524,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

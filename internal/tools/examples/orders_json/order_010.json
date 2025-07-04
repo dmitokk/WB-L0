@@ -1,0 +1,61 @@
+{
+  "order_uid": "order-010",
+  "track_number": "TRACK-4821",
+  "entry": "WBIL",
+  "locale": "ru",
+  "customer_id": "customer-10",
+  "delivery_service": "fedex",
+  "shardkey": "6",
+  "sm_id": 111,
+  "date_created": "2024-06-01T13:40:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "John",
+    "phone": "+79431451510",
+    "zip": "936716",
+    "city": "Piter",
+    "address": "Street 46",
+    "region": "Russia",
+    "email": "user10@example.com"
+  },
+  "payment": {
+    "transaction": "txn-10",
+    "request_id": "req-1660",
+    "currency": "USD",
+    "provider": "sber",
+    "amount": 8881,
+    "payment_dt": 1717243800,
+    "bank": "sberbank",
+    "delivery_cost": 137,
+    "goods_total": 4572,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 6126,
+      "track_number": "TRACK-4821",
+      "price": 1626,
+      "rid": "rid-WOui6N",
+      "name": "Shirt",
+      "sale": 13,
+      "size": "M",
+      "total_price": 1414,
+      "nm_id": 646523,
+      "brand": "Nike",
+      "status": 202
+    },
+    {
+      "chrt_id": 4149,
+      "track_number": "TRACK-4821",
+      "price": 1983,
+      "rid": "rid-vDUIpn",
+      "name": "Pants",
+      "sale": 7,
+      "size": "S",
+      "total_price": 1844,
+      "nm_id": 177830,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}

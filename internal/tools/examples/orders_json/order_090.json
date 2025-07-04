@@ -1,0 +1,74 @@
+{
+  "order_uid": "order-090",
+  "track_number": "TRACK-2527",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-90",
+  "delivery_service": "dhl",
+  "shardkey": "7",
+  "sm_id": 196,
+  "date_created": "2024-06-02T03:00:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "Elena",
+    "phone": "+79129309443",
+    "zip": "516264",
+    "city": "Kazan",
+    "address": "Street 28",
+    "region": "Russia",
+    "email": "user90@example.com"
+  },
+  "payment": {
+    "transaction": "txn-90",
+    "request_id": "req-1859",
+    "currency": "RUB",
+    "provider": "sber",
+    "amount": 2929,
+    "payment_dt": 1717248600,
+    "bank": "sberbank",
+    "delivery_cost": 367,
+    "goods_total": 1579,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 4362,
+      "track_number": "TRACK-2527",
+      "price": 1412,
+      "rid": "rid-1eqm6E",
+      "name": "Shirt",
+      "sale": 10,
+      "size": "XL",
+      "total_price": 1270,
+      "nm_id": 407142,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 4084,
+      "track_number": "TRACK-2527",
+      "price": 1635,
+      "rid": "rid-MpKjcM",
+      "name": "Shoes",
+      "sale": 32,
+      "size": "M",
+      "total_price": 1111,
+      "nm_id": 929051,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 4551,
+      "track_number": "TRACK-2527",
+      "price": 1224,
+      "rid": "rid-ROVWsA",
+      "name": "Pants",
+      "sale": 16,
+      "size": "S",
+      "total_price": 1028,
+      "nm_id": 670385,
+      "brand": "Adidas",
+      "status": 202
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "order_uid": "order-025",
+  "track_number": "TRACK-5176",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-25",
+  "delivery_service": "dhl",
+  "shardkey": "3",
+  "sm_id": 182,
+  "date_created": "2024-06-01T16:10:00Z",
+  "oof_shard": "b",
+  "delivery": {
+    "name": "John",
+    "phone": "+79414075014",
+    "zip": "373293",
+    "city": "Piter",
+    "address": "Street 12",
+    "region": "Russia",
+    "email": "user25@example.com"
+  },
+  "payment": {
+    "transaction": "txn-25",
+    "request_id": "req-5113",
+    "currency": "RUB",
+    "provider": "wbpay",
+    "amount": 2542,
+    "payment_dt": 1717244700,
+    "bank": "tinkoff",
+    "delivery_cost": 461,
+    "goods_total": 4916,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 2482,
+      "track_number": "TRACK-5176",
+      "price": 1109,
+      "rid": "rid-uAJuVZ",
+      "name": "Pants",
+      "sale": 31,
+      "size": "XL",
+      "total_price": 765,
+      "nm_id": 482705,
+      "brand": "Nike",
+      "status": 202
+    },
+    {
+      "chrt_id": 6691,
+      "track_number": "TRACK-5176",
+      "price": 178,
+      "rid": "rid-Bs3e3w",
+      "name": "Pants",
+      "sale": 38,
+      "size": "XL",
+      "total_price": 110,
+      "nm_id": 781547,
+      "brand": "Nike",
+      "status": 202
+    },
+    {
+      "chrt_id": 4249,
+      "track_number": "TRACK-5176",
+      "price": 725,
+      "rid": "rid-oB4ZRI",
+      "name": "Pants",
+      "sale": 10,
+      "size": "M",
+      "total_price": 652,
+      "nm_id": 566455,
+      "brand": "Reebok",
+      "status": 202
+    }
+  ]
+}

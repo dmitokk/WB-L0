@@ -1,0 +1,74 @@
+{
+  "order_uid": "order-004",
+  "track_number": "TRACK-8945",
+  "entry": "WBIL",
+  "locale": "en",
+  "customer_id": "customer-4",
+  "delivery_service": "dhl",
+  "shardkey": "3",
+  "sm_id": 163,
+  "date_created": "2024-06-01T12:40:00Z",
+  "oof_shard": "a",
+  "delivery": {
+    "name": "Ivan",
+    "phone": "+79451952450",
+    "zip": "668022",
+    "city": "Piter",
+    "address": "Street 68",
+    "region": "Russia",
+    "email": "user4@example.com"
+  },
+  "payment": {
+    "transaction": "txn-4",
+    "request_id": "req-4335",
+    "currency": "RUB",
+    "provider": "paypal",
+    "amount": 7108,
+    "payment_dt": 1717243440,
+    "bank": "sberbank",
+    "delivery_cost": 440,
+    "goods_total": 9247,
+    "custom_fee": 0
+  },
+  "items": [
+    {
+      "chrt_id": 8238,
+      "track_number": "TRACK-8945",
+      "price": 1203,
+      "rid": "rid-Is9kbl",
+      "name": "Shirt",
+      "sale": 23,
+      "size": "M",
+      "total_price": 926,
+      "nm_id": 636035,
+      "brand": "Nike",
+      "status": 202
+    },
+    {
+      "chrt_id": 7613,
+      "track_number": "TRACK-8945",
+      "price": 1125,
+      "rid": "rid-RsNbUP",
+      "name": "Shirt",
+      "sale": 35,
+      "size": "M",
+      "total_price": 731,
+      "nm_id": 799591,
+      "brand": "Adidas",
+      "status": 202
+    },
+    {
+      "chrt_id": 7360,
+      "track_number": "TRACK-8945",
+      "price": 1940,
+      "rid": "rid-xVPHtX",
+      "name": "Shirt",
+      "sale": 8,
+      "size": "L",
+      "total_price": 1784,
+      "nm_id": 784371,
+      "brand": "Nike",
+      "status": 202
+    }
+  ]
+}
