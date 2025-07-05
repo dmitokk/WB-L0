@@ -274,7 +274,7 @@ func GetAllOrders(db *sql.DB) ([]*model.Order, error) {
 func getItemsForOrder(db *sql.DB, orderUID string) ([]model.Item, error) {
 	query := `
 	SELECT 
-		i.chrtid, i.track_number, i.price, i.rid, i.itemname, i.sale,
+		i.chrtid, i.tracknumber, i.price, i.rid, i.itemname, i.sale,
 		i.itemsize, i.totalprice, i.nmid, i.brand, i.itemstatus
 	FROM items it
 	JOIN item i ON it.itemid = i.chrtid

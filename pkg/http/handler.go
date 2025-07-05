@@ -24,17 +24,20 @@ func handler(database *sql.DB) http.HandlerFunc {
 		fmt.Println(orderUID)
 
 		order, ok := cache.Get(orderUID)
-
+		fmt.Print(order)
 		if !ok {
 			orderPtr, err := db.GetOrderById(database, orderUID)
 			if err != nil {
-
+				fmt.Print("Thiss order does not exist!")
 			}
 			order = *orderPtr
 		}
 	
 		// Set response headers
 		w.Header().Set("Content-Type", "application/json")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 		w.WriteHeader(http.StatusOK)
 
 		data, err := json.Marshal(order)

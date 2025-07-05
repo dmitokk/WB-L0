@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Lookup</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+      overflow-x: auto;
+      max-height: 400px;
+    }
+
+    .error {
+      color: red;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Поиск заказа</h1>
+    <p>Введите <code>order_uid</code>, чтобы получить данные заказа:</p>
+
+    <input type="text" id="orderIdInput" placeholder="Например, order-001" />
+    <button onclick="fetchOrder()">Поиск</button>
+
+    <div id="result" style="margin-top: 2rem;"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script>
+    async function fetchOrder() {
+      const orderId = document.getElementById("orderIdInput").value.trim();
+      const resultDiv = document.getElementById("result");
+      const errorDiv = document.getElementById("error");
+      resultDiv.innerHTML = "";
+      errorDiv.innerText = "";
+
+      if (!orderId) {
+        errorDiv.innerText = "Введите корректный ID заказа.";
+        return;
+      }
+
+      try {
+        const res = await fetch(`http://localhost:8081/order/${orderId}`);
+
+        if (!res.ok) {
+          throw new Error(`Ошибка: ${res.status}`);
+        }
+
+        const data = await res.json();
+        resultDiv.innerHTML = `<h3>Информация о заказе:</h3><pre>${JSON.stringify(data, null, 2)}</pre>`;
+      } catch (err) {
+        errorDiv.innerText = "Ошибка получения данных заказа. Проверьте ID и попробуйте снова.";
+        console.error(err);
+      }
+    }
+  </script>
+</body>
+</html>
